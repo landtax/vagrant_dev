@@ -5,7 +5,7 @@ vagrant plugin install  vagrant-vbguest
 echo "vagrant UP"
 vagrant up
 echo "play ansible playbook"
-cd ansible
+cd ansible_playbooks
 ansible-playbook --inventory-file=hosts site.yml --private-key=~/.vagrant.d/insecure_private_key -u vagrant
 echo "DONE. Ready fo 'vagrant ssh'"
 
