@@ -23,10 +23,13 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   # rails server
   # config.vm.network :forwarded_port, guest: 3000, host: 3000
 
+  # mysql
+  config.vm.network :forwarded_port, guest: 3306, host: 3306
+
   # memcached
   config.vm.network :forwarded_port, guest: 11211, host: 11211
 
-  # mysql
+  # redis
   config.vm.network :forwarded_port, guest: 6379, host: 6379
   
 
